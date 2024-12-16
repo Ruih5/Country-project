@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title>Food</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #FFF8DC;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav.container {
+        background-color: #d32f2f;
+        padding: 20px;
+        text-align: center;
+        color: black;
+      }
+
+      nav.container a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin: 0 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #FFEBCD;
+        transition: background-color 0.3s ease;
+      }
+
+      nav.container a:hover {
+        background-color: #FFE4C4;
+      }
+
+      h1 {
+        font-size: 60px;
+        color: #FFFAF0;
+        margin-bottom: 30px;
+      }
+
+      .intro-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+      }
+
+      .intro-section .intro-box {
+        flex: 1;
+        border: 4px solid #FFFFF0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        background-color: #fff;
+      }
+
+      .intro-section h1 {
+        font-size: 36px;
+        color: #d32f2f;
+        background-color: #ffcccc;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .intro-section p {
+        font-size: 20px;
+        color: #333;
+        line-height: 1.6;
+        margin-top: 20px;
+      }
+
+      .intro-section img {
+        flex: 1;
+        max-width: 600px;
+        width: 80%;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .food-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .food-item {
+        border: 2px solid #FAF0E6;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .food-item img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .food-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .food-caption {
+        text-align: center;
+        background-color: #d32f2f;
+        color: white;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 0 0 15px 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="container">
+      <h1>Chinese Cuisine</h1>
+	  
+      <a href="index.html">Home</a>
+      <a href="Food.html">Food</a>
+      <a href="places.html">Place</a>
+    </nav>
+
+    <div class="intro-section">
+      <div class="intro-box">
+        <h1>Introduction</h1>
+        <p>
+          Chinese cuisine is one of the oldest and most diverse culinary traditions in the world. 
+          There are five major cuisines in China: Sichuan cuisine, Shandong cuisine, Cantonese cuisine, Jiangsu cuisine, and Fujian cuisine.
+        </p>
+      </div>
+      <div>
+        <img src="https://static01.nyt.com/images/2019/08/27/dining/27REST-DAL-slide-N2XY/27REST-DAL-slide-N2XY-superJumbo.jpg" alt="Chinese Cuisine">
+      </div>
+    </div>
+
+    <section class="food-gallery">
+      <div class="food-item">
+        <img src="https://imagedelivery.net/WLUarKbmUXuuhDC7PG5_Qw/articles/0aef6e281879d253a9c521decc982df8.jpg/public" alt="Sichuan">
+        <div class="food-caption">Sichuan cuisine</div>
+		 A type of Chinese cuisine originating from Sichuan.is characterized by strong flavors, especially large amounts of chili peppers.
+      </div>
+      <div class="food-item">
+        <img src="https://www.topchinatravel.com/pic/china-guide/cuisine/shandong-cuisine-33.jpg" alt="Shandong cuisine">
+        <div class="food-caption">Shandong cuisine</div>
+      </div>
+      <div class="food-item">
+        <img src="https://news.cgtn.com/news/3d3d514e30416a4d31457a6333566d54/img/b8baedc868a54dd4a79e4ae5ba93fbfc/b8baedc868a54dd4a79e4ae5ba93fbfc.jpg" alt="Cantonese cuisine">
+        <div class="food-caption">Cantonese cuisine</div>
+      </div>
+      <div class="food-item">
+        <img src="https://hillsshanghai.com/cdn/shop/articles/huaiyangcai1.jpg?v=1725176887" alt="Jiangsu cuisine">
+        <div class="food-caption">Jiangsu cuisine</div>
+      </div>
+      <div class="food-item">
+        <img src="https://www.tasteatlas.com/images/dishes/1c243e3f21124fea8e50d44dcfb28777.jpg" alt="Fujian cuisine">
+        <div class="food-caption">Fujian cuisine</div>
+      </div>
+    </section>
+
+  </body>
+</html>
